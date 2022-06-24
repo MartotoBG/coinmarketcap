@@ -1,0 +1,36 @@
+body {
+    margin-left: 300px;
+}
+.header {
+    display: flex;
+}
+.div-header-1 {
+    display: flex;
+    justify-content: left; 
+    margin-top: 60px;
+}
+.div-logo {
+    margin-left: 0px;
+}
+.div-search {
+    margin: 0 0 0 0px;
+}
+.div-bell {
+    margin: 0 0 0 0px;
+}
+.div-lines {
+    margin: 0 0 0 0px;
+    
+}
+.div-header-2 {
+    display: flex;
+    justify-content: left; 
+    margin-top: 200px;
+   
+}
+.div-header-3 {
+    display: flex;
+    justify-content: left;
+    margin-top: 200px;
+    
+}
