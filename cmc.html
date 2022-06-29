@@ -6,28 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coinmarketcap</title>
     <link rel="stylesheet" href="cmc.css">
-</head>
 <body>
-    <header class="header">
-        <div class="div-header-1">
-        <div class="div-logo"> <img src="https://s2.coinmarketcap.com/static/cloud/img/coinmarketcap_1.svg?_=a9a5ae0"></div><br>
-        <div  class="div-search"> <img src="data:image/png;base64,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" width="20px"></div>
-        <div  class="div-bell"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///8AAABhYWGlpaXT09PV1dW4uLiioqKysrIMDAwlJSV1dXXc3Nz29vadnZ34+Pjm5ubGxsZ+fn6VlZVBQUFxcXFUVFQ3NzdZWVkrKyu+vr5JSUmIiIgxMTFPT0/r6+sgICBsbGxERESNjY2rqF/1AAAEZElEQVR4nO2di1riQAxGHUUoIAJyUQTl4vu/41q7rHKddjKTP+P+5wXM+ZLOJa3k5kaNUbF6WXRdd/HyVIz0/qwaxZv7yVuBDigy4647YYwOKiZPp36fPKHDisftWUHnbtGBxeJ8Bn9RFl8vCjr3ig4uClcEnUMHF4PJVcMJOrwIXBX8DUlsewzb6ADFXNop9uS/Y3gE8y/Te6/hPTpEIXdewzt0iEIun2f25H6uefEavqBDFLLwGr6hQxRy5l54RBcdohCvYPbbBQ1paJ+eV7CHDlHAsNXp11hLZ53WEB1qCK3JtEaF7pl+tNABN2Pcb2C3p59NA3W0CtCrWOXQ7R8vg/1KltYT2favnT56lvsarxuxX8nGahf1ocnieZ3pA1rmHP67bhP6aJ0TxlH9SowtOSH7nw9LaRzFWWGO2ZjZHX1t7XCMbBzhRxg/K7Rcia9tL8NA0z/eJnieKVrwObGgc89YwTd/hGKgDdX0GSwBZvFdRdC5d5TgTEnQuRlG8FFN0LlHhGD8s/Y1AI2qgaqgcwN1w9Q7/TE7bUHNh7BC+VEcqQs6p3uX0tnqD1Hd+P1fWKRA8auNIUTQOb0XOHHbavVR+zBlDRJ0bq1kuIUZbnUEcSnUSmKK3mhdVHqo2gfSQzSOp/rntZ9onN2gghrfpuheC09J/8JmCzZMv2GABdOX6bV/8dEh9Stwvf7aJVL33dB+LnWZPqD1Pkn7FQPm6ntI2otw2peF9Uj7ShFt90VKQeTF6ZuUVyj0ka0i5cHNwkKTdqlBtaAOSdmQmqPlvpgnNJR/PRqDRUJDtNtfaEhDGuKhIQ1piIeGNKQhHhrSkIZ4aEhDGuKhIQ1piIeGNKQhHhrSkIZ4aEhDGuKhIQ1piIeGNKQhHhrSkIZ4aEhDGuKhIQ1piIeGNKQhHhrSkIZ4aEjD/9nQPzZVh2TDWVtos38k+t1kO4KJFK2UaEWCQrWUwZLoWbQmGF3RVolWRC1UexksiZhFm4IRFS2WaEWkQrWawZIoWbQsGEXRbolWiAvVdgZLhFm0LyhUtF6iFYJCzSGDJcFZzEUwWDGPEq0IKtR8MlgSkMW8BAMUcyrRioaFmp9gU8UOOtwAOo0MbfxQaTOa/awpDS1CQxrah4Y0tE8zQ+zIozAg82YJIYQQQohJRvNbKXPdCeNNiTGXLe1cNSkxpsrbzmGMmeR688WDiGCIVvDwLBZ8Rit4kI+0VhlMLUDe4Ek7wFGOfLuwvVncRFhq0AJepA+i9cdQPgQy/dxtMUJDdPg1mIgEJ+jwazAQGQ7Q4ddBMsoz5QDOeEiSmEUKJa91snm5EjqutIcOvDahRzfzB7Zvwj6pavZRE5iQGexpZ6ZHp/lN2PrN95hh09WmZ7w9c0pDxfwEP9k1EJyigw1jVltwhg41lKKmYIEONJz1sobfco0OU0TbK9hGhyjmen8xq3PMRdqXanWXf/72rDvvJ3rvnbyfv1Pui4/tbtN13c3y9qNI9vMkJ/wBdH5r9p6QCEMAAAAASUVORK5CYII=" width="20px"></div>
-        <div class="div-lines"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAYFBMVEX///8AAADNzc1RUVHBwcHx8fEqKir6+vrU1NSYmJjExMTY2Nj39/dfX181NTXn5+cTExNaWlrh4eGNjY14eHhkZGSBgYFFRUUkJCS2trapqakKCgobGxugoKBAQEA4ODheOPUcAAACVElEQVR4nO3d63KCQAyG4VhEEDmpUIuW9v7vslDE1pafZDKTfZ8r+DIcdjczAREAAAAAAEITH158OMQL1SVdu/Gk7ZLnArt360ire+9+1ZcX1nFUFPnj+dtZZ1Gym5/H0jqJmnIqsLHOoagZC0ytU6hKhwoj6xCqIpHKOoOySq7WEZRdxedS+KNwvFRMSqmtIyirA6jQ/116tI6g7Ci9dQRlvZysIyg7iXxYZ1B1GfalmXUIVdl4uPD8rimmHsbNOoea272P4fdlU82Nmsrn2+bjUaBIsrdOo2D/3DGN+0/rRKv67Bf63nGabX3I0qW2PgAAAAAAAAAAAAAAAAAAAAAAWFeSnps28qFtzmnyt8C9ty+47PZP9WUeJ7rr7KdAr7PA/eMOtU6i5n6nbq1zKNqOBcZ+R0g3m9s44nW2TqHqPKyD1hmUJc6H1cdx9VfrCMpe5WIdQdlF3qwjKHsT6wTqAriG/p9D/+9S/+uh/z2N/31pAGcL/+fDAM74AfRpAui1BdAvDaHnDQAAAAAAAAAAAAAAAAAAAAAAVlc5+h9w9b+8uC+tZ0BWVf75p7P7/3K7/7d6ZR1Fzb3E3OPg2qTOvyssrHMoKsYCfY+rjzOIvj+qcBE5WWdQdnI7Azzr5WgdQdlRfG3W/ivF72I4qQOo0P9d6nlHMyrkah1B2dXxwWIyHC8i6wyqomFfmlqHUJWOh4vGOoWiZjoC+10wyrnP5u3LLbPdo9+W+1wUi/xXO7Hzt3mru+eOcNK11pFW1XZLn+CJDy8+HOKF6gAAAAAA8O0LM/9d+pDQETYAAAAASUVORK5CYII=" height="20px"></div>
+    <div class="div-header">
+    <div class="div-header-1">
+        <span>Cryptos:20 000</span>
+        <span>Exchanges:500</span>
+        <span>Market Cap: $1 000 000 000 000</span>
+        <span>24h Vol: $100 000 000 000</span>
+        <span>Dominance: BTC:42.5% ETH:15.2%</span>
+        <span class="gas">ETH Gas: 27 Gwei</span>
+        <details class="language">
+            <summary>English</summary>
+            <p>Russian</p>
+            <p>Bulgarian</p>
+        </details>
+        <details>
+            <summary class="usd">&#36USD</summary>
+            <p>Euro</p>
+            <p>BGN</p>
+        </details>
         </div>
-        <div class="div-header-2">
-        
-                                <div style="margin-left:-300px"><img src="https://s2.coinmarketcap.com/static/new-alerts/613f25cbef9a5a001905f323/img/1655919313032_Making-Passive-Income-With-Crypto_v3-280x136.jpg" style="border-radius:10px;" height="140px"></div>
-            <p style="color:#586693; margin-top: 10px;"">Crypto Deep Dive</p>
-            <p style="color: black; margin-top: 5px;">Passive Income With Crypto</p>
+    </div>
+    <hr>
+    <div class="div-header-2">
+    <div class="div-header-3">
+        <span class="span-font">CoinMarketCap</span>
+        <span class="span-font">Cryptocurrencies</span>
+        <span class="span-font">Exchanges</span>
+        <span class="span-font">NFT</span>
+        <span class="span-font">Gravity</span>
+        <span class="span-font">Portfolio</span>
+        <span class="span-font">Watchlist</span>
+        <span class="span-font">Products</span>
+        <span class="span-font" style="margin-right: 100px;">Learn</span>
+        <span><img style="margin-right:15px" src="https://s2.coinmarketcap.com/static/cloud/img/loyalty-program/diamond-icon.svg"></span>
+        <span><img style="margin-right:30px" height="25px"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///8AAABhYWGlpaXT09PV1dW4uLiioqKysrIMDAwlJSV1dXXc3Nz29vadnZ34+Pjm5ubGxsZ+fn6VlZVBQUFxcXFUVFQ3NzdZWVkrKyu+vr5JSUmIiIgxMTFPT0/r6+sgICBsbGxERESNjY2rqF/1AAAEZElEQVR4nO2di1riQAxGHUUoIAJyUQTl4vu/41q7rHKddjKTP+P+5wXM+ZLOJa3k5kaNUbF6WXRdd/HyVIz0/qwaxZv7yVuBDigy4647YYwOKiZPp36fPKHDisftWUHnbtGBxeJ8Bn9RFl8vCjr3ig4uClcEnUMHF4PJVcMJOrwIXBX8DUlsewzb6ADFXNop9uS/Y3gE8y/Te6/hPTpEIXdewzt0iEIun2f25H6uefEavqBDFLLwGr6hQxRy5l54RBcdohCvYPbbBQ1paJ+eV7CHDlHAsNXp11hLZ53WEB1qCK3JtEaF7pl+tNABN2Pcb2C3p59NA3W0CtCrWOXQ7R8vg/1KltYT2favnT56lvsarxuxX8nGahf1ocnieZ3pA1rmHP67bhP6aJ0TxlH9SowtOSH7nw9LaRzFWWGO2ZjZHX1t7XCMbBzhRxg/K7Rcia9tL8NA0z/eJnieKVrwObGgc89YwTd/hGKgDdX0GSwBZvFdRdC5d5TgTEnQuRlG8FFN0LlHhGD8s/Y1AI2qgaqgcwN1w9Q7/TE7bUHNh7BC+VEcqQs6p3uX0tnqD1Hd+P1fWKRA8auNIUTQOb0XOHHbavVR+zBlDRJ0bq1kuIUZbnUEcSnUSmKK3mhdVHqo2gfSQzSOp/rntZ9onN2gghrfpuheC09J/8JmCzZMv2GABdOX6bV/8dEh9Stwvf7aJVL33dB+LnWZPqD1Pkn7FQPm6ntI2otw2peF9Uj7ShFt90VKQeTF6ZuUVyj0ka0i5cHNwkKTdqlBtaAOSdmQmqPlvpgnNJR/PRqDRUJDtNtfaEhDGuKhIQ1piIeGNKQhHhrSkIZ4aEhDGuKhIQ1piIeGNKQhHhrSkIZ4aEhDGuKhIQ1piIeGNKQhHhrSkIZ4aEhDGuKhIQ1piIeGNKQhHhrSkIZ4aEjD/9nQPzZVh2TDWVtos38k+t1kO4KJFK2UaEWCQrWUwZLoWbQmGF3RVolWRC1UexksiZhFm4IRFS2WaEWkQrWawZIoWbQsGEXRbolWiAvVdgZLhFm0LyhUtF6iFYJCzSGDJcFZzEUwWDGPEq0IKtR8MlgSkMW8BAMUcyrRioaFmp9gU8UOOtwAOo0MbfxQaTOa/awpDS1CQxrah4Y0tE8zQ+zIozAg82YJIYQQQohJRvNbKXPdCeNNiTGXLe1cNSkxpsrbzmGMmeR688WDiGCIVvDwLBZ8Rit4kI+0VhlMLUDe4Ek7wFGOfLuwvVncRFhq0AJepA+i9cdQPgQy/dxtMUJDdPg1mIgEJ+jwazAQGQ7Q4ddBMsoz5QDOeEiSmEUKJa91snm5EjqutIcOvDahRzfzB7Zvwj6pavZRE5iQGexpZ6ZHp/lN2PrN95hh09WmZ7w9c0pDxfwEP9k1EJyigw1jVltwhg41lKKmYIEONJz1sobfco0OU0TbK9hGhyjmen8xq3PMRdqXanWXf/72rDvvJ3rvnbyfv1Pui4/tbtN13c3y9qNI9vMkJ/wBdH5r9p6QCEMAAAAASUVORK5CYII="></span>
+        <span>Log in</span>
+        <button style="background-color:#3861fb; color:white; border-radius:20%; height:30px; margin-top: -5px;">Sign up</button>
+        <input type="text" placeholder="Search" style="background-color:#171924; margin-right: 20px; margin-bottom: 5px;">
+    </div>
+    </div>
+    <div class="div-header-4">
+        <div class="div-header-4-1">
+            <img style="border-radius: 20px" src="https://s2.coinmarketcap.com/static/new-alerts/613f25cbef9a5a001905f323/img/1656522720277_Bitcoin-Legal-Tender-Thumbnail_280x136.jpg">
+            <p style="color: #a1a7ad;">Crypto Deep Dive</p>
+            <p style="color: white";>How Can Bitcoin Become Legal Tender</p>
         </div>
-        <div class="div-header-3">
-            <div> <img src="https://s2.coinmarketcap.com/static/new-alerts/61eaf7492f29840013760da4/img/1656058306705_2022-06-24%2015.08.42.jpg" style="border-radius:10px;" height="140px"></div>
-            <p style="color: #586693; margin-top: 10px;">Gravity Spotlight - Binance Gift Card</p>
-            <p style="color:black; margin-top: 5px;">#QTUM -Blockchain Done Right</p>
-            </div>
+        <div class="div-header-4-2">
+            <img style="border-radius: 20px"src="https://s2.coinmarketcap.com/static/new-alerts/61eaf7492f29840013760da4/img/1656483846886_Klaytn-Spotlight-280x136.jpg">
+            <p style="color: #a1a7ad;">CMC-Community Spotlight</p>
+            <p style="color: white;">Klaytn & NFTb: Metaverser Incubation</p>
         </div>
-            
-    </header>
+        <div class="div-header-4-3">
+            <img style="border-radius: 20px"src="https://s2.coinmarketcap.com/static/new-alerts/613ff90685133600192a3b73/img/1656439453742_June-28-Daily-Thumbnail-280x136.jpg">
+            <p style="color: #a1a7ad;">Crypto Espresso</p>
+            <p style="color: white;">FTX Buying Robinhood?</p>
+        </div>
+        <div class="div-header-4-4">
+            <img style="border-radius: 20px"src="https://s2.coinmarketcap.com/static/new-alerts/611521ecc3074e0013b0c4a9/img/1656413139776_telegram-cloud-document-5-6185777135681013143.jpg">
+            <p style="color: #a1a7ad;">Free Airdrop!</p>
+            <p style="color: white;">Join the "OwlDAO" Token Airdrop!</p>
+        </div>
+        <div class="div-header-4-5">
+            <img style="border-radius: 20px"src="https://s2.coinmarketcap.com/static/new-alerts/6115224cb91ba00012e951d7/img/1656033739021_Learn-and-Earn-280x136.jpeg">
+            <p style="color: #a1a7ad;">Learn About Cryptos!</p>
+            <p style="color: white;">Learn About +28 Crypto Project Now!</p>
+        </div>
+    </div>
 </body>
 </html>
